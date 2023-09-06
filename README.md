@@ -30,7 +30,7 @@ We welcome contributions from fellow committee members and anyone interested in 
 
 2. Clone your forked repository to your local machine:
    ```
-   git clone https://github.com/your-username/DEV-IT.git
+   git clone https://github.com/vedantpatel07756/DEV-IT.git
    ```
 
 3. Create a new branch for your feature or bug fix:
