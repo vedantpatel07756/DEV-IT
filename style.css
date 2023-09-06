@@ -22,7 +22,7 @@ body{
     width: 100vw;
     background-color: var(--body);
     /* background-color: black; */
-  
+
 }
 
 nav ul{
@@ -31,11 +31,11 @@ nav ul{
 }
 
 .logo img{
- 
+
     width: 150px;
     padding: 10px;
     mix-blend-mode: lighten;
-   
+
 }
 
 
@@ -84,7 +84,7 @@ padding: 5%;
     }
     .menu li {
         display: none;
-  
+
         text-align: center; 
     }
 
@@ -179,7 +179,7 @@ padding: 5%;
 
 }
 .welcome{
-    
+
     width:50%;
     color: white;
     font-weight: 600;
@@ -195,6 +195,23 @@ padding: 5%;
     /* height: 250px; */
     border-radius: 20px;
     box-shadow: 20px 20px #888888;   
+}
+
+@media (max-width: 768px){
+
+    .About{
+        padding: 10% 0% 2% 0%;
+        text-align: justify;
+    }
+    .president img{
+        width: 200px;
+        box-shadow:none; 
+    }
+ .welcome{
+    margin-top: 5%;
+
+    font-size: 15px;
+ }
 }
 
 
@@ -228,7 +245,7 @@ padding: 5%;
     background-color: white;
     text-transform: uppercase;
     border-radius: 10px;
-  
+
 }
 
 .que1:hover{
@@ -242,7 +259,7 @@ padding: 5%;
 #que1{
     font-size: 17px;
     font-weight: 700;
-   
+
 }
 
 #ans1{
@@ -266,7 +283,7 @@ cursor: pointer;
     overflow:visible;
     color:rgb(98, 98, 98);
      opacity: 1;
- 
+
 } 
 
 .question p{
@@ -392,4 +409,29 @@ cursor: pointer;
     color: var(--main);
 }
 
+@media (max-width: 768px){
+  .footer{
+    padding: 10px;
+  }
+  .flogo img{
+    padding: 5%;
+  }
+  /* .fcontaint{
+    padding-top: 100px;
+  } */
 
+.fmedia{
+    margin-top: 10%;
+}
+
+.fleft{
+    /* width: 100%; */
+    margin-left: 10%;
+}
+.fleft p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* text-align: center; */
+}
+}
