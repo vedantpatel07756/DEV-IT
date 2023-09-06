@@ -1,6 +1,4 @@
-Creating a GitHub README.md file for your project named DEV-IT, a website for your college committee, is a great way to provide information and context to potential users and contributors. Below is a basic template you can use as a starting point:
 
-```markdown
 # DEV-IT - College Committee Website
  
 
@@ -54,7 +52,7 @@ We welcome contributions from fellow committee members and anyone interested in 
 
 ## Getting Started
 
-To get started with DEV-IT, you can visit our website at [https://github.com/vedantpatel07756/DEV-IT](https://github.com/vedantpatel07756/DEV-IT) and explore the various features. Feel free to create issues or reach out if you encounter any problems or have suggestions for improvement.
+To get started with DEV-IT, you can visit our website at [https://github.com/vedantpatel07756/DEV-IT/](https://github.com/vedantpatel07756/DEV-IT/) and explore the various features. Feel free to create issues or reach out if you encounter any problems or have suggestions for improvement.
 
 ## License
 
