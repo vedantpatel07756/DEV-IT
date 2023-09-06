@@ -1,4 +1,4 @@
-
+```markdown
 # DEV-IT - College Committee Website
  
 
@@ -56,7 +56,7 @@ To get started with DEV-IT, you can visit our website at [https://github.com/ved
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
 
 Thank you for being a part of DEV-IT! Together, we can make our college committee even more productive and efficient.
 
