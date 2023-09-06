@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main:#FFD700;
+    --body:#171717;
+}
+
+body{
+    background-color: var(--body);
+}
+
+/*--------- NAVBAR------------  */
+#navhead{
+    width: 100vw;
+    background-color: var(--body);
+    /* background-color: black; */
+  
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+ 
+    width: 150px;
+    padding: 10px;
+    mix-blend-mode: lighten;
+   
+}
+
+
+.menu{
+    width: 50em;
+    /* margin-right: 5%; */
+   float: right;
+   transition:all 0.3s ease;
+
+}
+.menu li{
+display: inline-block;
+padding: 5%;
+}
+
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu li a:hover{
+    color: var(--main);
+}
+#menu-icon{
+    display: none;
+}
+
+#menu-icon span::after{
+    display: none;
+}
+
+#nav_res{
+    display: none;
+}
+
+
+
+/*--------- NAVBAR RESPONSIVE------------  */
+
+@media (max-width: 768px) {
+    .logo img{
+        width: 100px;
+        padding: 10px;
+    }
+    .menu li {
+        display: none;
+  
+        text-align: center; 
+    }
+
+    #menu-icon span::after{
+        content: "\2630";
+        display:block;
+    color: white;
+    }
+
+    #nav_res{
+        width: 70px;
+        opacity: 0;
+    }
+    #menu-icon{
+        display: block;
+        font-size: xx-large;
+        padding: 10px;
+    }
+    #nav_res:checked ~ #menu-icon span::after{
+        content: "\2715";
+       color: var(--main);
+       /* z-index: 100; */
+    }
+
+    #nav_res:checked ~ .menu li{
+        display: block;
+    }
+
+    #nav_res:checked ~ .menu{
+        /* transition: 2s linear; */
+        /* position: absolute; */
+        padding-top: 50px;
+        background-color:var(--body);
+        /* transition:all 2s ease; */
+        /* z-index: 1; */
+    }
+
+}
+
+
+/* ------------Banner ----------- */
+
+.stage {
+    position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage img{
+    width: 500;
+}
+
+
+
+
+.container{
+    position: relative;
+    top: 800px;  /*changes should be done here for responsveness of element below banner */
+}
+
+/*------------- TAG LINE   --------- */
+.tagline{
+    position: sticky;
+    top: 0;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1;
+    background-color: var(--body);
+}
+
+@media (max-width: 768px){
+    .tagline {
+        font-size: 10px;
+    }
+}
+
+/*---------About ----------- */
+
+.About{
+    background-color: var(--body);
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding: 10% 10% 2% 10%;
+    justify-content: space-around;
+
+
+}
+.welcome{
+    
+    width:50%;
+    color: white;
+    font-weight: 600;
+}
+
+.welcome h1{
+    color: var(--main);
+    padding-bottom: 10px;
+}
+
+.president img{
+    width: 250px;
+    /* height: 250px; */
+    border-radius: 20px;
+    box-shadow: 20px 20px #888888;   
+}
+
+@media (max-width: 768px){
+
+    .About{
+        padding: 10% 0% 2% 0%;
+        text-align: justify;
+    }
+    .president img{
+        width: 200px;
+        box-shadow:none; 
+    }
+ .welcome{
+    margin-top: 5%;
+
+    font-size: 15px;
+ }
+}
+
+
+
+
+
+
+
+
+
+/*--------- fREQUENTLY Asked question------------  */
+
+.question{
+    position: relative;
+    background-color: var(--body);
+    /* width: 100vw; */
+}
+
+.question p:first-child{
+    text-align: center;
+    padding: 5% 10% 1% 10%;
+}
+
+.que1{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding: 2% 0 2% 2%;
+    margin: 1% 20% 1% 20%;
+    overflow: hidden;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+  
+}
+
+.que1:hover{
+    box-shadow:5px 1px 18px #888888;
+    color: var(--main);
+   }
+
+
+
+
+#que1{
+    font-size: 17px;
+    font-weight: 700;
+   
+}
+
+#ans1{
+    position: absolute;
+width: 57%;
+height: 20px;
+opacity: 0;
+cursor: pointer;
+}
+.ans1{
+    height: 0px;
+    opacity: 0;
+    transition:all 0.3s ease;
+}
+
+#ans1:checked + .ans1{
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3% 3% 3% 0;
+    overflow:visible;
+    color:rgb(98, 98, 98);
+     opacity: 1;
+ 
+} 
+
+.question p{
+    color: var(--main);
+    font-size: xx-large;
+}
+
+
+@media (max-width: 768px) {
+    .que{
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+}
+
+/*------------ Footer --------- */
+
+.footer{
+    position: relative;
+    background-color: #080808;
+    margin-top: 5%;
+    padding: 50px;
+    padding-left: 100px;
+
+
+
+}
+
+.fcontaint{
+    display: flex;
+    color: white;
+    flex-wrap: wrap-reverse;
+    padding-top: 50px; 
+}
+
+.flogo img{
+    width: 200px;
+    mix-blend-mode: lighten;
+
+}
+
+.fleft p{
+    color: white;
+    font-weight: 600;
+    /* padding-top: 50px; */
+}
+.fleft p:nth-child(2){
+    color: #888888;
+    /* font-weight: 20; */
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+
+.fright{
+    margin-left: 10%;
+    /* font-size: xx-large; */
+    width: 60%;
+    font-weight: 600;
+}
+
+.fright p{
+    font-size: xx-large;
+    text-align: left;
+}
+
+.fmedia{
+    margin-top:5%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.m1 a{
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+.m1 p{
+    margin-bottom: 10px;
+    color: #888888;
+    font-size: 15px;
+}
+
+.m2 p{
+    margin-bottom: 10px;
+
+    color: #888888;
+    font-size: 15px;
+}
+.m2 i{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.fa-twitter:hover{
+   color: skyblue;
+}
+
+.fa-instagram:hover{
+    color:pink;
+}
+
+.fa-linkedin:hover{
+    color:rgb(109, 109, 238);
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+
+
+.flast p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #888888;
+    font-size: 15px;
+}
+
+
+.footer p{
+    color: var(--main);
+}
+
+@media (max-width: 768px){
+  .footer{
+    padding: 10px;
+  }
+  .flogo img{
+    padding: 5%;
+  }
+  /* .fcontaint{
+    padding-top: 100px;
+  } */
+
+.fmedia{
+    margin-top: 10%;
+}
+
+.fleft{
+    /* width: 100%; */
+    margin-left: 10%;
+}
+.fleft p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* text-align: center; */
+}
+}
+
